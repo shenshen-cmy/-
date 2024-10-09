@@ -341,12 +341,12 @@ while yunxing:
                     moveright=True
                 if event.key==pygame.K_UP:
                     moveup=True
-                # if event.key==pygame.K_DOWN:
-                #     movedown=True
-                # if event.key==pygame.K_SPACE and 可以发射子弹:
-                #     wo_zidans.append(wo_zidan())
-                #     screen.blit(wo2,(wo_x,wo_y))
-                #     bullet = bullet -1
+                if event.key==pygame.K_DOWN:
+                    movedown=True
+                if event.key==pygame.K_SPACE and 可以发射子弹:
+                    wo_zidans.append(wo_zidan())
+                    screen.blit(wo2,(wo_x,wo_y))
+                    bullet = bullet -1
                 if event.key==pygame.K_SPACE:
                     pygame.time.delay(10**10)
                 if event.key==pygame.K_DOWN:
